@@ -14,6 +14,12 @@ public enum OpenRouterModelIds
         Mistral7BInstructFree = 0,
         
         /// <summary>
+        /// OpenChat is a library of open-source language models, fine-tuned with "C-RLFT (Conditioned Reinforcement Learning Fine-Tuning)" - a strategy inspired by offline reinforcement learning. It has been trained on mixed-quality data without preference labels.  <br/>
+        /// Note: this is a free, rate-limited version of this model. Outputs may be cached. Read about rate limits here.  <br/> 
+        /// </summary>
+        OpenChat35Free = 1,
+        
+        /// <summary>
         /// From the creator of MythoMax, merges a suite of models to reduce word anticipation, ministrations, and other undesirable words in ChatGPT roleplaying data.  <br/>
         /// It combines Neural Chat 7B, Airoboros 7b, Toppy M 7B, Zepher 7b beta, Nous Capybara 34B, OpenHeremes 2.5, and many others.  <br/>
         /// #merge  <br/>
@@ -254,7 +260,8 @@ public enum OpenRouterModelIds
         HuggingFaceZephyr7B = 40,
         
         /// <summary>
-        /// GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks. Training data: up to Sep 2021.  <br/> 
+        /// GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.  <br/>
+        /// Updated by OpenAI to point to the latest version of GPT-3.5. Training data up to Sep 2021.  <br/> 
         /// </summary>
         OpenAiGpt35Turbo = 41,
         
@@ -276,7 +283,7 @@ public enum OpenRouterModelIds
         OpenAiGpt4Turbo = 44,
         
         /// <summary>
-        /// The latest GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Apr 2023.  <br/>
+        /// The latest GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Dec 2023.  <br/>
         /// Note: heavily rate limited by OpenAI while in preview.  <br/> 
         /// </summary>
         OpenAiGpt4TurboPreview = 45,

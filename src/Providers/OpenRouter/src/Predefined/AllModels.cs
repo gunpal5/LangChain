@@ -5,6 +5,11 @@ namespace LangChain.Providers.OpenRouter.Predefined;
 public class Mistral7BInstructFreeModel(OpenRouterProvider provider) : OpenRouterModel(provider, OpenRouterModelIds.Mistral7BInstructFree);
 
 
+/// <inheritdoc cref="OpenRouterModelIds.OpenChat35Free"/>
+/// <param name="provider">Open Router Provider Instance</param>
+public class OpenChat35FreeModel(OpenRouterProvider provider) : OpenRouterModel(provider, OpenRouterModelIds.OpenChat35Free);
+
+
 /// <inheritdoc cref="OpenRouterModelIds.Mythomist7BFree"/>
 /// <param name="provider">Open Router Provider Instance</param>
 public class Mythomist7BFreeModel(OpenRouterProvider provider) : OpenRouterModel(provider, OpenRouterModelIds.Mythomist7BFree);
