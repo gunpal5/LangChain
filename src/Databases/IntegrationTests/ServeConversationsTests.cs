@@ -10,7 +10,7 @@ public class ServeConversationsTests
     public async Task Test1()
     {
         var repository = new SqLiteConversationRepository("Data Source=:memory:;");
-            
+
         // setup
         var conversation = await repository.CreateConversation("test");
         await repository.AddMessage(new StoredMessage
