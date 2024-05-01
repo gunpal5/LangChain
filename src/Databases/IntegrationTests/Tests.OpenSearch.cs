@@ -56,7 +56,7 @@ public partial class Tests
         setup_image_tests();
         var vectorCollection = await _vectorDatabase!.GetOrCreateCollectionAsync(_indexName!, _dimensions);
 
-        string[] extensions = { ".bmp",".gif", ".jpg", ".jpeg", ".png", ".tiff" };
+        string[] extensions = { ".bmp", ".gif", ".jpg", ".jpeg", ".png", ".tiff" };
         var files = Directory.EnumerateFiles(@"[images directory]", "*.*", SearchOption.AllDirectories)
             .Where(s => extensions.Any(ext => ext == Path.GetExtension(s)));
 
@@ -95,7 +95,7 @@ public partial class Tests
     {
         setup_image_tests();
         var vectorCollection = await _vectorDatabase!.GetOrCreateCollectionAsync(_indexName!, _dimensions);
-      
+
         var path = Path.Combine(Path.GetTempPath(), "test_image.jpg");
         var imageData = await File.ReadAllBytesAsync(path);
         var binaryData = new BinaryData(imageData, "image/jpg");
