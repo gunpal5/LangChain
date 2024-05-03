@@ -67,7 +67,7 @@ public class FileChatMessageHistory : BaseChatMessageHistory
                 string json = File.ReadAllText(MessagesFilePath);
                 _messages = JsonSerializer.Deserialize<List<Message>>(json) ?? new List<Message>();
             }
-            
+
             return Task.CompletedTask;
         }
         catch (Exception ex)
