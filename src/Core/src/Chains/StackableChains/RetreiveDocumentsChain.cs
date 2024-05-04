@@ -32,7 +32,7 @@ public class RetrieveDocumentsChain : BaseStackableChain
         CancellationToken cancellationToken = default)
     {
         values = values ?? throw new ArgumentNullException(nameof(values));
-        
+
         var retriever = _vectorCollection.AsRetriever(_embeddingModel);
         retriever.K = _amount;
 
