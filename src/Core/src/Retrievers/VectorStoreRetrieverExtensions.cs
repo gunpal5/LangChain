@@ -46,7 +46,7 @@ public static class VectorStoreRetrieverExtensions
     {
         var retriever = vectorCollection.AsRetriever(embeddingModel, searchType, scoreThreshold);
         retriever.K = amount;
-        
+
         return await retriever.GetRelevantDocumentsAsync(query).ConfigureAwait(false);
     }
 }
